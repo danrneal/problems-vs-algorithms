@@ -2,12 +2,12 @@
 
 ## Design Choices
 
-I used the exponent operator to keep track of how large the number squared was and once it exceeded the target was able to decrement the number by one to get the floored square root.
+I used a binary search algorithm to cut the search space for the floored square root in half with each iteration. The algorithm first guesses a number in the middle of the search space and checks if it is correct. If not it cuts the search space in half and recurse with the new search space.
 
 ## Time Complexity
 
-Time complexity is O(sqrt(n)) since the while loop only has to execute until the square root of n is reached incrementing by one each loop.
+Time complexity is O(log(n)) since we are cutting the search space in half with each recursion making the time complexity the same as binary search.
 
 ## Space Complexity
 
-Space complexity is O(1) since all that is stored is a single value in a variable.
+Space complexity is also O(log(n)) since with each comparison is putting another call to the function on the call stack.
