@@ -7,7 +7,7 @@ Six algorithm implementations with design and complexity analysis.
 A description of each task can be found in the docstring of each file. Each task can be run by simply calling the file. For instance, you can run the Square Root of an Integer file as follows:
 
 ```bash
-square_root_of_an_integer.py
+Usage: square_root_of_an_integer.py
 ```
 
 Accompanying design and complexity analysis is in a markdown file of the same name for each file.
